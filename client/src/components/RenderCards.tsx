@@ -7,7 +7,13 @@ interface IRenderCardsProps {
 //data, title
 const RenderCards: React.FC<IRenderCardsProps> = ({ items }) => {
   // const { items } = props
-  return items.map(card => <Card key={card._id} {...card} />)
+  return (
+    <>
+      {items.map(card => (
+        <Card key={card._id} {...card}/>
+        )) }
+    </>
+  )
 }
 
 export default RenderCards
