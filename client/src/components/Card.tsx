@@ -5,7 +5,6 @@ import { downloadImage } from "../utils"
 import { ICard } from "../types/data"
 interface ICardItem extends ICard {}
 
-//_id, name, prompt, photo
 const Card: React.FC<ICardItem> = props => {
   const { _id, name, prompt, photo } = props
 

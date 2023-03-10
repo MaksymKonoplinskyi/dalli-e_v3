@@ -29,7 +29,6 @@ const Home: React.FC = () => {
       if (response.ok) {
         const result = await response.json()
         setAllPosts(result.data.reverse())
-        // console.log(result.data.reverse());
       }
     } catch (err) {
       alert(err)

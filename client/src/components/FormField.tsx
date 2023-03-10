@@ -13,21 +13,6 @@ const FormField: React.FC<IFormField>  = (props) => {
     handleSurpriseMe,
   } = props
 
-  // const handleSearchChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-  //   clearTimeout(searchTimeout);
-  //   setSearchText(e.target.value);
-
-  //   setSearchTimeout(
-  //     setTimeout(() => {
-  //       const searchResult<ICard[]> = allPosts.filter(
-  //         (item) =>
-  //           item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-  //           item.prompt.toLowerCase().includes(searchText.toLowerCase())
-  //       );
-  //       setSearchedResults(searchResult);
-  //     }, 500)
-  //   );
-  // };
   return (
   <div>
     <div className="flex items-center gap-2 mb-2">

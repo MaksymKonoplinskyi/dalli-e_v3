@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react"
-import { ICard } from "../types/data"
-import Card from "./Card"
+import React from "react"
+
 interface IRenderTitleProps {
   title: string
 }
-//data, title
+
 const RenderTitle: React.FC<IRenderTitleProps> = props => {
   const { title } = props
   return (
